@@ -50,3 +50,4 @@ class PizzeriaOrder:
 
     def __repr__(self) -> str:
         return f"PizzeriaOrder(customer='{self.customer_name}', items_count={len(self)})"
+

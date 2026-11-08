@@ -50,3 +50,4 @@ class OrderValidator:
     def is_valid_phone(phone: str) -> bool:
         digits_only = re.sub(r"\D", "", phone)
         return len(digits_only) == 10
+

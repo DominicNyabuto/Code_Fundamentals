@@ -74,3 +74,4 @@ class Cart:
         lines.append("---")
         lines.append(f"TOTAL: ${self.calculate_total():.2f}")
         return "\n".join(lines)
+

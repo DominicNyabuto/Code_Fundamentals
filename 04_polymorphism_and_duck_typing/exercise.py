@@ -115,3 +115,4 @@ class Cart:
         """
         # TODO: Implement generate_receipt
         pass
+

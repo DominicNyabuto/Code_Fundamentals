@@ -54,3 +54,4 @@ class Pizza(MenuItem):
     def get_ingredients_summary(self) -> str:
         topping_names = ", ".join(t.name for t in self.toppings) if self.toppings else "None"
         return f"Crust: {self.crust.name}, Sauce: {self.sauce.name}, Toppings: {topping_names}"
+
