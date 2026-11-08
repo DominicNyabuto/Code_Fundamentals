@@ -127,3 +127,4 @@ class OrderSubject:
         """Calculate final total: subtotal - discount_strategy.calculate_discount(subtotal)."""
         # TODO: Implement get_final_total
         pass
+

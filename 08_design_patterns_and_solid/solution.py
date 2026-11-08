@@ -99,3 +99,4 @@ class OrderSubject:
     def get_final_total(self) -> float:
         discount = self.discount_strategy.calculate_discount(self.subtotal)
         return max(0.0, self.subtotal - discount)
+
