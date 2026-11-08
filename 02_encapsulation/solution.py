@@ -69,3 +69,4 @@ class TrackedOrder:
                 f"Cannot transition from {self.__status} to {new_status}"
             )
         self.__status = new_status
+

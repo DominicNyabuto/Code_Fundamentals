@@ -47,3 +47,4 @@ class CustomerOrder:
 
     def calculate_total(self) -> float:
         return sum(pizza.calculate_price() for pizza in self.pizzas)
+

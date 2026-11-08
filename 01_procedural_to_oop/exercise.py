@@ -70,3 +70,4 @@ class CustomerOrder:
         """Sum up the prices of all pizzas in the order."""
         # TODO: Implement calculate_total
         pass
+

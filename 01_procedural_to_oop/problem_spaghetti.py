@@ -43,3 +43,4 @@ if __name__ == "__main__":
         print_receipt(order_2)
     except Exception as e:
         print(f"Boom! Unhandled runtime crash due to lack of encapsulation: {e}")
+
