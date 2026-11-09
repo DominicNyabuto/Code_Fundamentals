@@ -16,8 +16,6 @@ def calculate_pizza_price(pizza):
     return base_price + len(pizza["toppings"]) * 1.5
 
 
-def price_calculation(pizza):
-    initial_price = 10.0 if pizza
 
 ```
 

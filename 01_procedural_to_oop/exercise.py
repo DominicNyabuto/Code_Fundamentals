@@ -28,16 +28,32 @@ class Pizza:
         Initialize an empty list of toppings.
         """
         # TODO: Implement __init__
+        size = size.lower()
+        if size not in self.SIZE_PRICES:
+            raise ValueError(f"Invalid pizza size. Must be 'small', 'medium', or 'large'")
+
+        self.size = size
+        self.crust = crust.lower()
+        self.toppings: List[str] = []
+
+
+
         pass
 
-    def add_topping(self, topping: str) -> None:
+    def add_topping(self, topping: str) -> None: # -> None - The method does an action and returns nothing.
         """Add a lower-case topping string to self.toppings."""
         # TODO: Implement add_topping
+        self.toppings.append(topping.lower())
+
         pass
 
     def calculate_price(self) -> float:
         """Calculate total price: base size price + (number of toppings * TOPPING_PRICE)."""
         # TODO: Implement calculate_price
+        base_size_price = self.SIZE_PRICES[self.size]
+        toppings_price = len(self.toppings) * self.TOPPING_PRICE
+        return  base_size_price + toppings_price
+
         pass
 
     def get_description(self) -> str:
