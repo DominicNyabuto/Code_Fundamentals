@@ -40,7 +40,7 @@ class Pizza:
     def add_topping(self, topping: str):
         self.toppings.append(topping.lower())
 
-    def calculate_price(self) -> float:
+    def calculate_price(self) -> float: #-> float is called a Return Type Hint.
         base = 8.0 if self.size == "small" else 10.0 if self.size == "medium" else 12.0
         return base + (len(self.toppings) * 1.50)
 ```
