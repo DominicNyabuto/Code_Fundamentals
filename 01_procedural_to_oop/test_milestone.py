@@ -40,7 +40,7 @@ class TestMilestone01(unittest.TestCase):
         
         p1 = Pizza("small", "thin")  # $8.0
         p2 = Pizza("large", "pan")   # $12.0
-        p2.add_topping("extra cheese") # +$1.50 -> $13.50
+        p2.add_topping("extra cheese") # $12.0+$1.50 -> $13.50
 
         order.add_pizza(p1)
         order.add_pizza(p2)
