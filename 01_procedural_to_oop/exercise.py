@@ -9,7 +9,7 @@ Instructions:
 from typing import List
 
 class Pizza:
-    """Blueprint for a customizable Pizza."""
+    """Class for a customizable Pizza."""
 
     SIZE_PRICES = {
         "small": 8.0,
