@@ -1,6 +1,6 @@
 # Milestone 01: From Procedural Spaghetti to Clean Classes
 
-## 🎯 The Core Insight from Cloud X Berry
+## The Core Insight from Cloud X Berry
 In the video, Cloud X Berry starts with an online pizza shop. At first, you might write code procedurally using dictionaries and global functions:
 
 ```python
