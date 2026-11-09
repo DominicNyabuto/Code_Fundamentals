@@ -14,7 +14,14 @@ pizza_order = {
 def calculate_pizza_price(pizza):
     base_price = 12.0 if pizza["size"] == "large" else 8.0
     return base_price + len(pizza["toppings"]) * 1.5
+
+
+def price_calculation(pizza):
+    initial_price = 10.0 if pizza
+
 ```
+
+
 
 ### Why does this fall apart in real software?
 1. **No Data Integrity:** Any rogue code can execute `pizza_order["toppings"] = "not a list"` or `pizza_order["size"] = "extra-giant-spaceship"`.
