@@ -32,6 +32,7 @@ An **Object** (instance) is the actual physical pizza baked from that recipe.
 class Pizza:
     def __init__(self, size: str, crust: str):
         # self refers to THIS specific pizza instance being created
+        # size and crust are parameters. 
         self.size = size.lower()
         self.crust = crust.lower()
         self.toppings = []
