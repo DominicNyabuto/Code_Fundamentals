@@ -23,7 +23,7 @@ def calculate_pizza_price(pizza):
 
 ---
 
-## 💡 The OOP Solution: The Blueprint (Class) and The House (Object)
+## The OOP Solution: The Blueprint (Class) and The House (Object)
 
 A **Class** is the recipe / blueprint.
 An **Object** (instance) is the actual physical pizza baked from that recipe.
@@ -46,7 +46,7 @@ class Pizza:
 
 ---
 
-## 🔨 Your Exercise
+## Your Exercise
 Open [exercise.py](file:///home/dominicnyabuto/Code/00_Coding_Fundamentals/OOPs/01_procedural_to_oop/exercise.py) and complete the `Pizza` and `CustomerOrder` classes.
 Then run:
 ```bash
