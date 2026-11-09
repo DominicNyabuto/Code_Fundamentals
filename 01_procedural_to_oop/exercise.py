@@ -64,6 +64,8 @@ class Pizza:
         Example (no toppings): 'small pizza with stuffed crust topped with: Cheese Only'
         """
         # TODO: Implement get_description
+        toppings_list = ", ".join(self.toppings) if self.toppings else "No Toppings"
+        return f"{self.size} pizza with {self.crust} crust topped with: {toppings_list}"
         pass
 
 
@@ -73,6 +75,9 @@ class CustomerOrder:
     def __init__(self, customer_name: str):
         """Initialize with customer name and an empty list of pizzas."""
         # TODO: Implement __init__
+        self.customer_name = customer_name
+        self.pizzas: List[Pizza] = []
+        
         pass
 
     def add_pizza(self, pizza: Pizza) -> None:
@@ -80,10 +85,15 @@ class CustomerOrder:
         If the passed object is not an instance of Pizza, raise TypeError("Item must be a Pizza").
         """
         # TODO: Implement add_pizza
+        if not isinstance(pizza, Pizza):
+            raise TypeError("Item must be a Pizza")
+        
+        self.pizzas.append(pizza)
         pass
 
     def calculate_total(self) -> float:
         """Sum up the prices of all pizzas in the order."""
         # TODO: Implement calculate_total
+        return sum(pizza.calculate_price() for pizza in self.pizzas)
         pass
 

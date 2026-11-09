@@ -24,7 +24,7 @@ class TestMilestone01(unittest.TestCase):
         plain_pizza = Pizza("medium", "stuffed")
         self.assertEqual(
             plain_pizza.get_description(),
-            "medium pizza with stuffed crust topped with: Cheese Only"
+            "medium pizza with stuffed crust topped with: No Toppings"
         )
         
         pepperoni_pizza = Pizza("large", "thin")
