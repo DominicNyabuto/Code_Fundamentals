@@ -1,5 +1,6 @@
 import unittest
-from exercise import Pizza, CustomerOrder
+from exercise import Pizza, CustomerOrder  #from the exercise.py file it 
+                                           #imports Pizza and CustomerOrder classes
 
 class TestMilestone01(unittest.TestCase):
     def test_pizza_initialization_and_validation(self):
