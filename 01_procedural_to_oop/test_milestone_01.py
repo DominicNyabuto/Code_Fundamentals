@@ -4,22 +4,22 @@ from exercise import Pizza, CustomerOrder  #from the exercise.py file it
 
 class TestMilestone01(unittest.TestCase):
     def test_pizza_initialization_and_validation(self):
-        pizza_order_example = Pizza("Large", "Thin")
-        self.assertEqual(pizza_order_example.size, "large")  #check if Large is lower 'large'
-        self.assertEqual(pizza_order_example.crust, "thin")  #check if Thin is lower 'thin'
-        self.assertEqual(pizza_order_example.toppings, [])  #check if toppings is empty
+        pizza_order_example_1 = Pizza("Large", "Thin")
+        self.assertEqual(pizza_order_example_1.size, "large")  #check if Large is lower 'large'
+        self.assertEqual(pizza_order_example_1.crust, "thin")  #check if Thin is lower 'thin'
+        self.assertEqual(pizza_order_example_1.toppings, [])  #check if toppings is empty
 
         with self.assertRaises(ValueError):  #check if ValueError is raised when 
-            Pizza("Giant", "Thin")         #invalid size is passed  
+            Pizza("Giant", "Thin")  #invalid size "Giant" is passed, should throw eroor, otherwise the test fails
 
     def test_add_topping_and_price_calculation(self):
-        pizza = Pizza("small", "traditional")
-        self.assertEqual(pizza.calculate_price(), 8.0)
+        pizza_order_example_2 = Pizza("small", "traditional")
+        self.assertEqual(pizza_order_example_2.calculate_price(), 8.0)
         
-        pizza.add_topping("Mushrooms")
-        pizza.add_topping("Olives")
-        self.assertEqual(pizza.toppings, ["mushrooms", "olives"])
-        self.assertEqual(pizza.calculate_price(), 8.0 + 3.0)
+        pizza_order_example_2.add_topping("Mushrooms")
+        pizza_order_example_2.add_topping("Olives")
+        self.assertEqual(pizza_order_example_2.toppings, ["mushrooms", "olives"])
+        self.assertEqual(pizza_order_example_2.calculate_price(), 8.0 + 3.0)
 
     def test_description_format(self):
         plain_pizza = Pizza("medium", "stuffed")

@@ -7,9 +7,27 @@ Instructions:
 """
 
 from typing import List
+        # Imports List from Python’s typing module. It is used to write type hints such as
+        # List[str], meaning “a list containing strings.” Type hints document intent and 
+        # can help tools such as IDEs and type checkers; Python itself does not automatically 
+        # enforce them.
 
 class Pizza:
-    """Class for a customizable Pizza."""
+    """
+    Class for a customizable Pizza.
+        - `class Pizza` - Defines a new class called Pizza. 
+        - You can create pizza objects from it, 
+            - e.g Pizza("large", "thin") makes a large pizza with thin crust.
+
+    Attributes:
+        - size - The size of the pizza. Must be one of "small", "medium", or "large”.
+        - crust - The type of crust (e.g., "thin", "stuffed").
+        - toppings - A list of toppings on the pizza.
+    
+    Class variables:
+        - SIZE_PRICES - A dictionary mapping each size to its base price.
+        - TOPPING_PRICE - The price of a single topping.
+    """
 
     SIZE_PRICES = {
         "small": 8.0,
@@ -19,13 +37,13 @@ class Pizza:
     TOPPING_PRICE = 1.50
 
     def __init__(self, size: str, crust: str):
-        """Initialize pizza with a size and crust type.
-        
-        Size should be converted to lower-case.
-        Validate that size is one of: "small", "medium", "large".
-        If invalid, raise ValueError("Invalid pizza size").
-        Crust should be lower-case string.
-        Initialize an empty list of toppings.
+        """
+        Initialize pizza with a size and crust type.
+            - Size should be converted to lower-case.
+            - Validate that size is one of: "small", "medium", "large".
+            - If invalid, raise ValueError("Invalid pizza size").
+            - Crust should be lower-case string.
+            - Initialize an empty list of toppings.
         """
         # TODO: Implement __init__
         size = size.lower()
