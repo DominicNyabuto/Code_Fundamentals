@@ -38,7 +38,7 @@ if __name__ == "__main__":
     
     # Bug scenario: Anyone can mutate data illegally!
     print("Tampering with Bob's order...")
-    order_2["toppings"] = "not_a_list"  # Ruined!
+    order_2["toppings"] = "not_a_list"  # Ruined!-basically turned the list to string
     try:
         print_receipt(order_2)
     except Exception as e:
